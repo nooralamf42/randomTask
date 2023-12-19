@@ -10,3 +10,5 @@ const clickHandler = async () =>{
     title.innerText = messege
     button.innerText = 'Get Another'
 }
+
+console.log("js is working")
