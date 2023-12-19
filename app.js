@@ -3,7 +3,7 @@ const button = document.querySelector('#btn')
 
 const API = 'http://www.boredapi.com/api/activity?participants=1'
 
-const clickHandler = async () =>{
+button.onclick = async () =>{
     let response = await fetch(API)
     let data = await response.json()
     let messege = data.activity
@@ -11,4 +11,4 @@ const clickHandler = async () =>{
     button.innerText = 'Get Another'
 }
 
-console.log("js is working")
+
