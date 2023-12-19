@@ -1,7 +1,7 @@
 const text = document.querySelector('#title')
 const button = document.querySelector('#btn')
 
-const API = 'http://www.boredapi.com/api/activity?participants=1'
+const API = 'https://www.boredapi.com/api/activity?participants=1'
 
 button.onclick = async () =>{
     let response = await fetch(API)
